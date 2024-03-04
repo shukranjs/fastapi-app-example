@@ -1,4 +1,4 @@
-from database import database
+from app.database import database
 
 
 def get_database():

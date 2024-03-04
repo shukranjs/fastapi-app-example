@@ -8,6 +8,10 @@ def read_root():
     return {"message": "Hello, FastAPI"}
 
 
+from app.api.v1.router import router
+
+app.include_router(router)
+
 if __name__ == "__main__":
     import uvicorn
 
