@@ -4,10 +4,11 @@ import os
 
 load_dotenv()
 
+
 database = MySQLDatabase(
-    os.getenv("DB_DATABASE"),
-    user=os.getenv("DB_USER"),
-    password=os.getenv("DB_PASSWORD"),
-    host=os.getenv("DB_HOST"),
-    port=int(os.getenv("DB_PORT")),
+    os.getenv("DB_DATABASE", "test"),
+    user=os.getenv("DB_USER", "test"),
+    password=os.getenv("DB_PASSWORD", "test"),
+    # host=os.getenv("DB_HOST", 'mysql'),
+    port=int(os.getenv("DB_PORT", "3306")),
 )

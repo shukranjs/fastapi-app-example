@@ -1,8 +1,5 @@
 from peewee import Model, MySQLDatabase
-
-database = MySQLDatabase(
-    "my_database", user="my_user", password="my_password", host="localhost", port=3306
-)
+from app.database import database
 
 
 class BaseModel(Model):
