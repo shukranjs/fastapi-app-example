@@ -17,9 +17,15 @@ services:
   fastapi:
     build: .
     ports:
-      - "8001:8001"
+      - "8000:8000"
     depends_on:
       - mysql
+    environment:
+      DB_HOST: mysql
+      DB_PORT: ${DB_PORT}
+      DB_DATABASE: ${DB_DATABASE}
+      DB_USER: ${DB_USER}
+      DB_PASSWORD: ${DB_PASSWORD}
 
 volumes:
   mysql_data:

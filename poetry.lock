@@ -210,6 +210,21 @@ files = [
 ]
 
 [[package]]
+name = "peewee-migrations"
+version = "0.3.32"
+description = "Migration engine for peewee orm"
+optional = false
+python-versions = "*"
+files = [
+    {file = "peewee-migrations-0.3.32.tar.gz", hash = "sha256:813f7089946aa26228d1e40daa0c30746ca94b805a449cc930f499ca32f5929f"},
+    {file = "peewee_migrations-0.3.32-py3-none-any.whl", hash = "sha256:225ccff8535e9d8b4b8aa4697d1d93eca5f651477708f6dfeb60168256e976fb"},
+]
+
+[package.dependencies]
+click = ">=7.0"
+peewee = ">=3.6.4"
+
+[[package]]
 name = "pydantic"
 version = "2.6.3"
 description = "Data validation using Python type hints"
@@ -690,4 +705,4 @@ files = [
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.8"
-content-hash = "8e7eab9f647b829558fa0bbc43214d8657ac8528baef8ac2dc3e9f884c224d94"
+content-hash = "6621698202b50ad73549cc771c83dc7ffcc938ed786036063d3cf611f34b2e3d"
